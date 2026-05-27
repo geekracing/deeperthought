@@ -1,26 +1,187 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+
+  --color-bg: #faf8f4;
+  --color-surface: #ffffff;
+  --color-text: #18160f;
+  --color-muted: #736b5e;
+  --color-border: #e8e2d9;
+  --color-accent: #1e3a5f;
+  --color-accent-muted: #e8f0fb;
+
+  --color-layer-0: #64748b;
+  --color-layer-1: #475569;
+  --color-layer-2: #0d9488;
+  --color-layer-3: #4f46e5;
+  --color-layer-A: #b45309;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light) {
+    --color-bg: #0d0c0a;
+    --color-surface: #171510;
+    --color-text: #ede8df;
+    --color-muted: #8e8679;
+    --color-border: #2a2720;
+    --color-accent: #7db3e8;
+    --color-accent-muted: #1a2535;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root.dark {
+  --color-bg: #0d0c0a;
+  --color-surface: #171510;
+  --color-text: #ede8df;
+  --color-muted: #8e8679;
+  --color-border: #2a2720;
+  --color-accent: #7db3e8;
+  --color-accent-muted: #1a2535;
 }
+
+:root.light {
+  --color-bg: #faf8f4;
+  --color-surface: #ffffff;
+  --color-text: #18160f;
+  --color-muted: #736b5e;
+  --color-border: #e8e2d9;
+  --color-accent: #1e3a5f;
+  --color-accent-muted: #e8f0fb;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Prose – body text measure and rhythm */
+.prose {
+  max-width: 65ch;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.prose h1 { font-size: 2rem; margin-top: 0; }
+.prose h2 { font-size: 1.4rem; }
+.prose h3 { font-size: 1.15rem; }
+
+.prose p {
+  margin-bottom: 1.4em;
+  hyphens: auto;
+}
+
+.prose a {
+  color: var(--color-accent);
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  opacity: 0.75;
+}
+
+.prose blockquote {
+  border-left: 2px solid var(--color-border);
+  padding-left: 1.25em;
+  margin-left: 0;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-accent-muted);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+.prose pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 1em 1.25em;
+  overflow-x: auto;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.4em;
+}
+
+.prose li {
+  margin-bottom: 0.4em;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2.5em 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: var(--font-sans);
+}
+
+.prose th {
+  text-align: left;
+  padding: 0.5em 0.75em;
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.06em;
+}
+
+.prose td {
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+/* Utility: muted text */
+.text-muted { color: var(--color-muted); }
+.text-accent { color: var(--color-accent); }
+.bg-surface { background-color: var(--color-surface); }
+.border-default { border-color: var(--color-border); }
