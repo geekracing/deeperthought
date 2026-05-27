@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:plakat.nu)",
+      "Bash(curl -sI https://plakat.nu)",
+      "Bash(curl -sL https://plakat.nu)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-import-alias --turbopack --yes)"
+    ]
+  }
+}
