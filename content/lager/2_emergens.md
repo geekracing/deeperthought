@@ -773,7 +773,7 @@ Immuniseringen är komplett när:
 - Motargument från fel aggregat avfärdas som klassintresse förklätt till analys
 
 Det finns då ingen möjlig datapunkt som falsifierar modellen inifrån. Det är inte en
-vetenskaplig modell – det är en unfalsifierbar identitetsstruktur.
+vetenskaplig modell – det är en icke-falsifierbar identitetsstruktur.
 
 ### Predatorrespons mot uppåtmobilitet
 
