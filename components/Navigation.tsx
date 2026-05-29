@@ -48,7 +48,7 @@ export default function Navigation() {
               }}
               title={layer.title}
             >
-              {layer.isAppendix ? 'A' : layer.number}
+              {layer.number}
             </Link>
           ))}
 
@@ -67,6 +67,16 @@ export default function Navigation() {
             }}
           >
             Artiklar
+          </Link>
+
+          <Link
+            href="/embryon"
+            className="px-2 py-1 rounded transition-colors hover:opacity-75 text-sm"
+            style={{
+              color: isActive('/embryon') ? 'var(--color-accent)' : 'var(--color-muted)',
+            }}
+          >
+            Embryon
           </Link>
 
           <Link

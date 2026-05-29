@@ -5,6 +5,15 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  async redirects() {
+    return [
+      {
+        source: '/lager/A',
+        destination: '/embryon/predatorisk-empati',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

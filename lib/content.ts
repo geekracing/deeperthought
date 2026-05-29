@@ -16,7 +16,14 @@ const LAYER_FILES: Record<string, string> = {
   '1': '1_invarianter.md',
   '2': '2_emergens.md',
   '3': '3_sjalvmodellering.md',
-  'A': 'A_embryo.md',
+}
+
+async function mdToHtml(content: string): Promise<string> {
+  const processed = await remark()
+    .use(remarkGfm)
+    .use(remarkHtml, { sanitize: false })
+    .process(content)
+  return processed.toString()
 }
 
 export async function getLayerContent(slug: string): Promise<{ content: string; frontmatter: Record<string, unknown> } | null> {
@@ -27,12 +34,7 @@ export async function getLayerContent(slug: string): Promise<{ content: string; 
 
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { content, data } = matter(raw)
-  const processed = await remark()
-    .use(remarkGfm)
-    .use(remarkHtml, { sanitize: false })
-    .process(content)
-
-  return { content: processed.toString(), frontmatter: data }
+  return { content: await mdToHtml(content), frontmatter: data }
 }
 
 export interface Article {
@@ -81,11 +83,6 @@ export async function getArticle(slug: string): Promise<{ article: Article; cont
   const { data, content } = matter(raw)
   if (data.status !== 'published') return null
 
-  const processed = await remark()
-    .use(remarkGfm)
-    .use(remarkHtml, { sanitize: false })
-    .process(content)
-
   return {
     article: {
       slug,
@@ -97,7 +94,64 @@ export async function getArticle(slug: string): Promise<{ article: Article; cont
       excerpt: content.split('\n\n')[0].slice(0, 200).replace(/[#*_]/g, ''),
       status: data.status,
     },
-    content: processed.toString(),
+    content: await mdToHtml(content),
+  }
+}
+
+export type EmbryoStatus = 'oprövad' | 'under prövning' | 'promoverad' | 'förkastad'
+
+export interface Embryo {
+  slug: string
+  title: string
+  author: string
+  date: string
+  layers: number[]
+  excerpt: string
+  status: EmbryoStatus
+}
+
+export async function getAllEmbryos(): Promise<Embryo[]> {
+  const dir = path.join(contentDir, 'embryon')
+  if (!fs.existsSync(dir)) return []
+
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'))
+  const embryos: Embryo[] = []
+
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(dir, file), 'utf-8')
+    const { data, content } = matter(raw)
+    embryos.push({
+      slug: file.replace('.md', ''),
+      title: data.title ?? 'Utan titel',
+      author: data.author ?? 'Anonym',
+      date: data.date ?? '',
+      layers: data.layers ?? [],
+      excerpt: content.split('\n\n')[0].slice(0, 200).replace(/[#*_]/g, ''),
+      status: data.status ?? 'oprövad',
+    })
+  }
+
+  return embryos.sort((a, b) => b.date.localeCompare(a.date))
+}
+
+export async function getEmbryo(slug: string): Promise<{ embryo: Embryo; content: string } | null> {
+  const filePath = path.join(contentDir, 'embryon', `${slug}.md`)
+  if (!fs.existsSync(filePath)) return null
+
+  const raw = fs.readFileSync(filePath, 'utf-8')
+  const { data, content } = matter(raw)
+
+  return {
+    embryo: {
+      slug,
+      title: data.title ?? 'Utan titel',
+      author: data.author ?? 'Anonym',
+      date: data.date ?? '',
+      layers: data.layers ?? [],
+      excerpt: content.split('\n\n')[0].slice(0, 200).replace(/[#*_]/g, ''),
+      status: data.status ?? 'oprövad',
+    },
+    content: await mdToHtml(content),
   }
 }
 
