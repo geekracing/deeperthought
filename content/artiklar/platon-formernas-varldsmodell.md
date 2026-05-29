@@ -86,7 +86,7 @@ Strukturella invarianter finns. Former av det Goda gör det inte.
 Båda felen var rationella från Platons position. Han saknade en modell för hur inbäddad
 kognition uppstår (evolution under selektionstryck), en modell för representation som brusig
 kanal (informationsteori), och begreppet om en sökrymd som inte kan uttömmas (lager 1,
-sektion 3). Utan dessa är direkt apprehension av formen den naturliga slutsatsen – och
+sektion 3). Utan dessa är direkt åskådning av formen den naturliga slutsatsen – och
 värden ser ut som former därför att de upplevs kosmiskt sanna (lager 0, "Moral"), vilket är
 en del av deras mekanism, inte bevis för deras formstatus.
 

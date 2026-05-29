@@ -210,7 +210,7 @@ skulle visa att det är fel.
 
 Falsifierbarhet är inte ett krav på att påståendet ska vara falsifierat, utan att vägen
 till falsifiering är specificerad. Påståenden vars formulering automatiskt absorberar alla
-möjliga motexempel är inte vetenskapliga modeller utan unfalsifierbara identitetsstrukturer.
+möjliga motexempel är inte vetenskapliga modeller utan icke-falsifierbara identitetsstrukturer.
 
 Falsifierbarhet förutsätter invariant sanning (sektion 8). Utan invariant sanning blir
 "modellen ska prövas mot verkligheten" meningslöst.
