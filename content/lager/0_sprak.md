@@ -268,6 +268,18 @@ sanningen om sin biosfär. En människa kan börja men ofullständigt. En civili
 komma längre. Gudsögonperspektiv är inte tillgängligt för någon aktör i något aggregat.
 Detta är en strukturell observation, inte en filosofisk.
 
+**Empati.** Operation där aktör simulerar den andres tillstånd i samarbetssyfte.
+Etymologiskt *en + pathos*, in-känsla – prepositionen säger riktningen mot den andre.
+Initialiseringsmekanism för tit-for-tat och sociala kontrakt. Mekanism utvecklad i
+lager 2 sektion 6.
+
+**Antipati.** Operation där aktör simulerar den andres tillstånd i avstötande syfte.
+Etymologiskt *anti + pathos*, mot-känsla. Värdeflipp på empatins hårdvara: samma
+kognitiva mekanism, motsatt tjänsteriktning. Vardagsbetydelsen blandar känslotillstånd
+och handlingsbenägenhet; ramverkets användning är specifikt operationell. Antipati
+instansieras i identifierbara driftlägen, av vilka predatorrespons är det skarpast
+avgränsade. Mekanism utvecklad i lager 2 sektion 6.
+
 **Självmodellering.** Operation där aggregat kör en modell *om* sig självt – inte bara av
 världen, utan av sin egen position, mål och modeller. Förutsätter självrepresentation,
 målfunktion och korrigeringskanal som verkar inom aggregatets livstid.
