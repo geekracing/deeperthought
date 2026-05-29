@@ -35,7 +35,7 @@ matematiskt från lager 1: tit-for-tat-stabilitet, kin selection, public goods-d
 värde-flippens grundresultat. Dessa gäller där deras strukturella förutsättningar
 uppfylls, oberoende av specifik aggregationsnivå. *Empiriskt observerade påståenden* är
 mönster identifierade i specifika aggregat på specifika tidsskalor: civilisationscykler,
-agitatorens mobiliseringsdynamik, proxy-eskaleringens specifika form. Dessa är
+agitatorns mobiliseringsdynamik, proxy-eskaleringens specifika form. Dessa är
 konsistenta med lager 1 men inte deducerbara från det – de är vad rekursionen producerat
 i den miljö vi observerat.
 
@@ -346,16 +346,27 @@ sökrymdsreduktion explicit gör flera av ramverkets prediktioner mekanistiskt s
 
 ---
 
-## 6. Empatins två driftlägen
+## 6. Empati och antipati
 
-Empati är inte ett spektrum från låg till hög. Det är en mekanism med två fundamentalt
-olika driftlägen – samma hårdvara, olika mjukvara.
+Empati och antipati är inte två separata kapaciteter. De är samma kognitiva mekanism –
+simulering av den andres tillstånd – körd med motsatt tecken på utfallet. Prepositionen
+i ordbildningen säger riktningen: empati (en + pathos) går *in i* den andre för att
+förstå; antipati (anti + pathos) går *emot* den andre för att avgränsa. Samma hårdvara,
+motsatt tjänsteriktning.
 
-**Samarbetsempati.** Förstår den andre för att hitta symmetrisk sårbarhet och initiera
-samarbete. Initialiseringsvillkor för tit-for-tat och sociala kontrakt.
+**Empati.** Förståelse riktad mot den andre i samarbetssyfte. Initialiseringsmekanism
+för tit-for-tat och sociala kontrakt. Initialiseringsvillkoren är symmetrisk sårbarhet
+och tillräcklig gemensam kostnad för defektering.
 
-**Predatorrespons.** Förstår den andre för att identifiera var idéerna är sårbara, och
-sedan pacifisera, cooptera eller förgöra dem innan de kan mobilisera motstånd.
+**Antipati.** Förståelse riktad mot den andre i avstötande syfte. Värdeflipp på samma
+hårdvara som empati. Antipati instansieras i identifierbara driftlägen, av vilka det
+skarpaste och hittills mest utvecklade är predatorrespons.
+
+### Predatorrespons som driftläge
+
+Predatorrespons är den aktiva, mobiliserande operationen under antipati: förståelse av
+den andre används för att lokalisera sårbarhet, och sedan pacifisera, cooptera eller
+förgöra innan motstånd kan mobiliseras.
 
 Arkitekturen är immunologisk:
 
@@ -373,7 +384,8 @@ predatorrespons än ett yttre angrepp. Detektionen är kalibrerad mot infiltrati
 bara frontalt anfall.
 
 Det finns inget "för mycket" eller "för lite" empati. Det finns rätt eller fel
-aktiveringsläge givet aggregationsnivå och selektionstryck.
+aktiveringsläge – mellan empati och antipati, och inom antipati mellan dess driftlägen –
+givet aggregationsnivå och selektionstryck.
 
 ---
 
@@ -517,7 +529,7 @@ operationen ändras utan genom att miljön ändras. Operationen som tjänade hom
 med små asymmetrier producerar systematiska fel i heterogena miljöer med stora
 asymmetrier, utan att aggregatet kan se att kalibreringen ändrats.
 
-### Agitatorens exploatering
+### Agitatorns exploatering
 
 Symmetriseringsregimen är inte neutral arena. Dess regel att söka medelpunkt mellan polerna
 gör att polerna bestämmer mitten. Den som drar längst åt sitt håll vinner
@@ -525,7 +537,7 @@ medelvärdesräkningen. Det är Overton-fönstret som spelteori.
 
 Det skapar systematisk belöning för överdrift. Den ärliga aktör som har korrekta påståenden
 men uttrycker dem måttfullt förlorar mot agitatorn som driver en överdriven position hårt,
-eftersom kompromissen mellan korrekt och överdrivet hamnar fel. Agitatorens överdrift är
+eftersom kompromissen mellan korrekt och överdrivet hamnar fel. Agitatorns överdrift är
 inte misslyckande i nyans – den är taktik kalibrerad mot symmetriseringsregimens egen
 logik.
 
