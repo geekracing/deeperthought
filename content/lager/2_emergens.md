@@ -597,6 +597,17 @@ Bufferten dämpar all signal från verkligheten, inte bara den som skulle aktive
 predatorrespons. Modeller drifter, men driften syns inte – bufferten skyddar institutioner
 från korrigering.
 
+**Drift är växande lokalt sanningsavstånd.** Drift (lager 1, sektion 3) har en precis
+koppling till sanning (lager 1, sektion 8): drift är avståndet mellan modell och sanning,
+mätt mot aktuell miljö. Avståndet kan växa utan att modellen ändras – referensen rör sig
+under den. Soldatens tränade reflexer (sektion 2) driftade inte; freden gjorde det.
+*Lokalt* bär bägge betydelserna: avståndet mäts lokalt i tid och miljö, och modellen
+sitter på ett lokalt optimum vars landskap flyttat sig (lager 1, sektion 3,
+sökrymdens otillgänglighet). Bufferten bestämmer inte driftens existens – drift är
+kontinuerlig i alla system med variation – utan hur mycket av den som ackumuleras
+okorrigerad. Den ackumulerade, okorrigerade driften är den storhet korrektionens
+amplitud i sektion 11 är proportionell mot.
+
 **Buffert är fältspecifik.** En aktör kan bära extremt felkalibrerade modeller på vissa fält
 samtidigt som hen är skarp på andra. Den skickliga kirurgen som tror på homeopati privat.
 Fysikprofessorn som är konspirationsteoretiker om politik. Det är inte hyckleri eller
@@ -660,6 +671,41 @@ Ryssland 1917.
 
 Vilket läge som inträffar avgörs av trycket relativt buffertens elastiska kapacitet och av
 om det finns kvar kanaler för låg-amplitud-korrigering när trycket bryter igenom.
+
+### Buffertöverlämning vid migration
+
+Cykelns buffertdynamik är formulerad för ett aggregat i sin egen miljö. Migration
+producerar ett specialfall: modellen byter miljö utan att förlora dämpning.
+
+En modell som länge varit majoritetsmodell bär en specifik buffert – den demografiska.
+När alla omgivande aggregat kör samma modell exponeras avvikelsen mellan modell och
+sanning aldrig för korrigerande signal; miljön ställer inte frågorna där modellen
+driftat. Drift ackumuleras okorrigerad över lång tid (sektion 10, drift som lokalt
+sanningsavstånd).
+
+Vid migration expanderar sökrymden: den nya miljön ställer dagligen frågor den gamla
+aldrig ställde. Enligt cykelns logik borde hela den ackumulerade driften förfalla till
+korrigering med amplitud proportionell mot integralen. Det som ofta observeras är i
+stället *buffertöverlämning*: mottagarmiljöns buffert – transfereringssystem,
+enklavbildning, symmetriseringsregim (sektion 9) – tar över dämpningen i samma skede
+som den demografiska bufferten släpper. Signalen når aldrig amplitud nog att tvinga
+modelljustering. Driften fortsätter, nu buren av det mottagande aggregatet.
+
+Överlämningen är mekanism, inte avsikt, och den är modellneutral: samma struktur gäller
+kolonisatörsenklaver, expatkolonier, religiösa separatistgrupper och sekulära diasporor.
+
+**Prediktion.** Korrigeringsutfallet efter migration bestäms av överlämningens täthet
+och av samarbetsmodellens exponeringsföreskrifter, inte av modellens metafysiska
+innehåll. Modeller vars regler föreskriver interaktion med den nya miljön – utbildning,
+arbete, kontrakt över aggregatgränsen – exponeras för signal och justerar inom kort
+tidskonstant oavsett metafysik. Modeller vars regler föreskriver separation behåller
+dämpningen och driftar vidare oavsett metafysik. Metafysiskt innehåll utan
+handlingskoppling är fältspecifikt buffrat (sektion 10) och bär ingen kostnad förrän
+sökrymden queryar det fältet.
+
+**Falsifiering.** Dokumenterade fall där tät buffertöverlämning kombinerats med snabb
+modelljustering på populationsnivå, eller där signalexponering utan överlämning inte
+producerat justering inom en generation, falsifierar mekanismen.
 
 ### Agitatorns funktion i cykeln
 
